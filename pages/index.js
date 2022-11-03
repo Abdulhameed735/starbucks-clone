@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import NavBar from '../components/NavBar'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
         <link href="https://starbucks.com/next_static/icons/pwa-icon-192.png" rel="icon" sizes="192x192" type="image/png"></link>
         <link color="#008046" href="https://starbucks.com/next_static/icons/safari-pinned-tab.svg" rel="mask-icon"></link>
       </Head>
+
+      <NavBar />
     </div>
   )
 }

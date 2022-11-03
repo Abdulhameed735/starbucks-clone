@@ -1,6 +1,8 @@
 //** */ SVG IMAGES/ICONS
 
 import logo from './svgs/logo.svg';
+import menu from './svgs/menu.svg';
+import close from './svgs/close.svg';
 import right from './svgs/right.svg';
 import left from './svgs/left.svg';
 import down from './svgs/down.svg';
@@ -19,16 +21,11 @@ import image3 from './images/image-3.jpg';
 import image4 from './images/image-4.jpg';
 import image5 from './images/image-5.jpg';
 
-//** */ CUSTOM FONTS
-import thin from './fonts/Thin.ttf';
-import light from './fonts/Light.ttf';
-import regular from './fonts/Regular.ttf';
-import semiBold from './fonts/SemiBold.ttf';
-import bold from './fonts/Bold.ttf';
-
 //** */ Export SVG images and icons
 export {
     logo, 
+    menu,
+    close,
     right, 
     left, 
     down, 
@@ -44,9 +41,4 @@ export {
 //** */ Export Homepage images
 export {
     image1, image2, image3, image4, image5
-}
-
-//** */ Export Custom Fonts
-export {
-    thin, light, regular, bold, semiBold
 }

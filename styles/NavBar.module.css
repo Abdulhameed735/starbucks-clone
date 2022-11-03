@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+.header {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.header__navContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__navLogo {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.nav__desktopMenu {
+    display: none;
+}
+
+.nav__firstMenu {
+    display: flex;
+    align-items: center;
+}
+
+.nav__secondMenu {
+    display: none;
+}
+
+.menu {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.mobileNav {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    right: 0;
+    height: calc(100% - 75px);
+    background-color: white;
+    box-shadow:  inset 0 4px 3px -3px rgb(0 0 0 / 10%), inset 0 4px 2px -2px rgb(0 0 0 / 7%);
+    width: 75%;
+    z-index: -1;
+}
+
+.hamMenu {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.mobileLi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileUl {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    font-family: Regular;
+    color: black;
+    margin-left: -1.5rem ;
+}
+
+.right {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.signIn, .joinNow {
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem 1.2rem;
+    border-radius: 999px;
+    font-family: semiBold;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.signIn {
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.joinNow {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.signIn:hover, .joinNow:hover {
+    opacity: 0.8;
+}
+
+.secondMenu__store {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 2rem ;
+}
+
+.menuNav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: calc(100% - 0px);
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    box-shadow: inset 0 4px 5px -3px rgb(0 0 0 / 20%);
+}
+
+.menuNav > ul {
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 1.2rem;
+    font-family: Regular;
+    letter-spacing: 0.015rem;
+    line-height: 1.4;
+}
+
+.menuNav__header {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.65rem;
+    text-align: center;
+    font-family: Regular;
+    cursor: pointer;
+    background-color: #f9f9f9
+}
+
+.pd {
+    padding: 0 2rem;
+}
+
+/*** Tablet Screen */
+@media screen and (min-width: 768px) {
+    .header__navLogo {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .mobileUl {
+        font-size: 1.55rem;
+        font-family: Regular;
+
+    }
+
+    .signIn, .joinNow {
+        padding: 0.4rem 1.4rem;
+    }
+
+    .menuNav__header {
+        gap: calc(100% - 20rem);
+    }
+
+    .menuNav > ul {
+        font-size: 1.5rem;
+    }
+
+    .menuNav__header {
+        font-size: 1.8rem;
+    }
+}
+
+/*** Laptop Screen */
+@media screen and (min-width: 1024px) {
+    .header__nav {
+        padding: 1.3rem 3rem;
+    }
+
+    .header__navLogo {
+        width: 3.7rem;
+        height: 3.7rem;
+    }
+
+    .nav__desktopMenu {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.05rem;
+        font-family: semiBold;
+        text-transform: uppercase;
+    }
+
+    .nav__secondMenu {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        font-family: semiBold;
+    }
+
+    .secondMenu__store {
+        margin-top: 0;
+    }
+    
+    .secondMenu__store:hover {
+        color: #006241;
+    }
+
+    .signIn {
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 1.5em;
+        border-radius: 999px;
+        font-family: semiBold;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid black;
+        background-color: transparent;
+    }
+
+    .joinNow {
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem 1.5em;
+        border-radius: 999px;
+        font-family: semiBold;
+        font-size: 0.9rem;
+        line-height: 1.2;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+    }
+
+    .signIn:hover, .joinNow:hover {
+        opacity: 0.8;
+    }
+    
+    .menu {
+        display: none;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+}
