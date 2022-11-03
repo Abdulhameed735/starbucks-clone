@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+.sectionsContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.8rem 0;
+}
+
+.sectionsRowContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.8rem 0;
+
+}
+
+.imagesContainer {
+    width: 100%;
+    background-color: #006241;
+}
+
+.imagesContainer > img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+    background-color: #006241;
+    padding: 0.8rem 1.82rem 2rem;
+    max-width: 100%;
+    font-family: Light;
+    color: white;
+}
+
+.textsContainer > h1 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.textsContainer > p {
+    font-size: 1.1rem;
+    font-family: Regular;
+}
+
+.textsContainer > button {
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid white;
+    border-radius: 999px;
+    cursor: pointer;
+    color: white;
+    font-family: Regular;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .sectionsContainer {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .sectionsRowContainer {
+        flex-direction: row-reverse;
+    }
+
+    .imagesContainer {
+        width: 50%;
+    }
+
+    .textsContainer {
+        width: 50%;
+        gap: 1.2rem;
+    }
+
+    .textsContainer > h1 {
+        font-size: 2.8rem;
+        font-family: semiBold;
+        max-width: 80%;
+    }
+    
+    .textsContainer > p {
+        font-size: 1.6rem;
+        line-height: 1.7 ;
+        max-width: 80%;
+    }
+    
+    .textsContainer > button {
+        padding: 0.5rem 1.4rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .textsContainer > button:hover {
+        background-color: #1e39321a
+    }
+}

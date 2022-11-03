@@ -70,14 +70,14 @@
 
 .mobileNav {
     position: absolute;
-    top: 75px;
+    top: 70px;
     bottom: 0;
     right: 0;
-    height: calc(100% - 75px);
+    height: calc(100% - 70px);
     background-color: white;
     box-shadow:  inset 0 4px 3px -3px rgb(0 0 0 / 10%), inset 0 4px 2px -2px rgb(0 0 0 / 7%);
     width: 75%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hamMenu {
@@ -227,6 +227,11 @@
         font-size: 1.05rem;
         font-family: semiBold;
         text-transform: uppercase;
+    }
+
+    .nav__desktopMenu > li:hover {
+        color: #006241;
+        transition: 0.2s all ease-in-out;
     }
 
     .nav__secondMenu {

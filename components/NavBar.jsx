@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/NavBar.module.css';
 import { motion } from 'framer-motion';
 import { logo } from '../assets/index';
@@ -23,12 +24,12 @@ const NavBar = () => {
         <nav className={styles.header__nav}>
             <div className={styles.header__navContainer}>
                 <div className={styles.nav__firstMenu}>
-                    <Image  className={styles.header__navLogo} src={logo} alt='logo' />
+                    <Link href='/'><Image  className={styles.header__navLogo} src={logo} alt='logo' /></Link>
 
                     <ul className={styles.nav__desktopMenu} >
-                        <li>Menu</li>
-                        <li>Rewards</li>
-                        <li>Gift Cards</li>
+                        <li><Link href='/menu'>Menu</Link></li>
+                        <li><Link href="/rewards">Rewards</Link></li>
+                        <li><Link href="/gift">Gift Cards</Link></li>
                     </ul>
                 </div>
 
@@ -38,8 +39,8 @@ const NavBar = () => {
                         <span>Find a store</span>
                     </div>
 
-                    <button className={styles.signIn}>Sign in</button>
-                    <button className={styles.joinNow}>Join now</button>
+                    <button className={styles.signIn}><Link href="/account/signin">Sign in</Link></button>
+                    <button className={styles.joinNow}><Link href="/account/create">Join now</Link></button>
                 </div>
 
                 <Image onClick={closeAll} className={styles.menu} src={toggle ? close : menu} alt={toggle ? 'close' : 'menu'} />
@@ -55,13 +56,13 @@ const NavBar = () => {
                         <span>Menu</span>
                         <Image className={styles.right} src={right} alt='right-icon' />
                     </li>
-                    <li>Rewards</li>
-                    <li>Gift Cards</li>
+                    <li><Link href="/rewards">Rewards</Link></li>
+                    <li><Link href="/gift">Gift Cards</Link></li>
                 </ul>
 
                 <div style={{display: 'flex', gap: '1rem'}}>
-                    <button className={styles.signIn}>Sign in</button>
-                    <button className={styles.joinNow}>Join now</button>
+                    <button className={styles.signIn}><Link href="/account/signin">Sign in</Link></button>
+                    <button className={styles.joinNow}><Link href="/account/create">Join now</Link></button>
                 </div>
 
                 <div className={styles.secondMenu__store}>
@@ -74,8 +75,10 @@ const NavBar = () => {
                 <nav className={styles.menuNav}>
                     <ul>
                         <li onClick={() => setMenuToggle(!menuToggle)}  className={styles.menuNav__header}>
+                            <Link href="/menu">
                             <Image src={left} alt='left-arrow-icon' />
                             <span>Menu</span>
+                            </Link>
                         </li>
                         
                         <li className={styles.pd}>All Products</li>

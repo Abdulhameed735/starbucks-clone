@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 0;
+}
+
+.imageContainer {
+    width: 100%;
+    background-color: #d4e9e2;
+}
+
+.imageContainer > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.textContainer {
+    background-color: #d4e9e2;
+    padding: 0.8rem 1.82rem 2rem;
+    max-width: 100%;
+    font-family: Light;
+    color: #1e3932;
+}
+
+.textContainer > h1 {
+    font-size: 1.4rem;
+}
+
+.textContainer > p {
+    font-size: 1.1rem;
+    font-family: Regular;
+}
+
+.textContainer > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-family: Regular;
+    padding: 0 1.7rem;
+    line-height: 1.4;
+}
+
+.textContainer > ul > li {
+    list-style: disc;
+}
+
+.textContainer > button {
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #1e3932;
+    border-radius: 999px;
+    cursor: pointer;
+    color: #1e3932;
+    font-family: Regular;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+}
+
+.container > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0.8rem;
+    font-size: 0.9rem;
+    font-family: Regular;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 1024px) {
+    .sectionContainer {
+        flex-direction: row;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .imageContainer {
+        width: 50%;
+        padding: 1.5rem 0rem;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .textContainer > h1 {
+        font-size: 1.8rem;
+    }
+    
+    .textContainer > p {
+        font-size: 1.4rem;
+    }
+    
+    .textContainer > ul {
+        gap: 1.1rem;
+        font-family: Regular;
+        font-size: 1.25rem;
+        padding: 0 2.8rem;
+        line-height: 1.4;
+    }
+    
+    .textContainer > button {
+        padding: 0.5rem 1.4rem;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .textContainer > button:hover {
+        background-color: #1e39321a
+    }
+
+    .container > span {
+        max-width: 60%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .container > span > a {
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+    }
+}
