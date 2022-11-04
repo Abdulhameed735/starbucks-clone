@@ -1,5 +1,6 @@
-import Head from "next/head"
-import NavBar from "../../components/NavBar"
+import Head from "next/head";
+import NavBar from "../../components/NavBar";
+import styles from '../../styles/Menu.module.css';
 
 const Menu = () => {
   return (

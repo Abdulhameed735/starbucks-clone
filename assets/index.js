@@ -1,5 +1,4 @@
 //** */ SVG IMAGES/ICONS
-
 import logo from './svgs/logo.svg';
 import menu from './svgs/menu.svg';
 import close from './svgs/close.svg';

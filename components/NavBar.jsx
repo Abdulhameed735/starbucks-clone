@@ -24,7 +24,7 @@ const NavBar = () => {
         <nav className={styles.header__nav}>
             <div className={styles.header__navContainer}>
                 <div className={styles.nav__firstMenu}>
-                    <Link href='/'><Image  className={styles.header__navLogo} src={logo} alt='logo' /></Link>
+                    <Link href='/'><Image className={styles.header__navLogo} src={logo} alt='logo' /></Link>
 
                     <ul className={styles.nav__desktopMenu} >
                         <li><Link href='/menu'>Menu</Link></li>
@@ -35,8 +35,10 @@ const NavBar = () => {
 
                 <div className={styles.nav__secondMenu}>
                     <div className={styles.secondMenu__store}>
-                        <Image src={map} alt='location' />
-                        <span>Find a store</span>
+                        <Link href='/store-locator'>                        
+                            <Image src={map} alt='location' />
+                            <span>Find a store</span>
+                        </Link>
                     </div>
 
                     <button className={styles.signIn}><Link href="/account/signin">Sign in</Link></button>
@@ -76,8 +78,8 @@ const NavBar = () => {
                     <ul>
                         <li onClick={() => setMenuToggle(!menuToggle)}  className={styles.menuNav__header}>
                             <Link href="/menu">
-                            <Image src={left} alt='left-arrow-icon' />
-                            <span>Menu</span>
+                                <Image src={left} alt='left-arrow-icon' />
+                                <span>Menu</span>
                             </Link>
                         </li>
                         
@@ -90,7 +92,6 @@ const NavBar = () => {
             )}
         </nav>
         )}
-
     </header>
   )
 }
