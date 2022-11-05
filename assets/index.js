@@ -6,6 +6,7 @@ import right from './svgs/right.svg';
 import left from './svgs/left.svg';
 import down from './svgs/down.svg';
 import map from './svgs/map.svg';
+import checkbox from './svgs/checkbox.svg';
 import facebook from './svgs/facebook.svg';
 import instagram from './svgs/instagram.svg';
 import pinterest from './svgs/pinterest.svg';
@@ -29,6 +30,7 @@ export {
     left, 
     down, 
     map, 
+    checkbox,
     facebook, 
     instagram, 
     pinterest, 
