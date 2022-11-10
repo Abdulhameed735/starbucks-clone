@@ -1,0 +1,149 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: #D4E9E2;
+    padding: 1rem 1.2rem;
+}
+
+.info__first {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.info__first_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.info__first > h1 {
+    font-family: Regular;
+    font-size: 1.2rem;
+    color: #000000DE;
+    margin: 0px 0 -15px;
+}
+
+.info__first_texts > p {
+    font-family: Regular;
+    color: #00000094;
+    margin: 0;
+}
+
+.info__first_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info__first_buttons {
+    display: flex;
+    gap: 1rem;
+    color: #000000DE;
+    width: 100%;
+}
+
+.add {
+    font-family: SemiBold;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    background-color: transparent;
+    color: Black;
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.check {
+    font-family: SemiBold;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    background-color: Black;
+    color: white;
+    padding: 0.6rem 1.3rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.info > div {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.info > div > a {
+    color: #006241;
+    line-height: 1;
+    font-family: Regular;
+    width: 100%;
+    margin-left: calc(100% - 170px);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .info {
+        background-color: #D4E9E2;
+        padding: 1.6rem 7rem;
+    }
+
+    .info__first > h1 {
+        font-size: 1.4rem;
+    }
+
+    .info__first_texts {
+        min-width: 150px;
+        justify-content: center;
+    }
+
+    .info__first_texts > p {
+        font-size: 1.3rem;
+    }
+
+    .info__first_cont {
+        flex-direction: row;
+    }
+
+    .info > div > a {
+        margin-left: calc(100% - 250px);
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .info {
+        flex-direction: row;
+        padding: 2rem 8rem;
+    }
+
+
+    .info > div {
+        width: 120%;
+        margin: auto;
+    }
+
+}

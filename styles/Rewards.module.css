@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+.header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #1E3932;
+    color: white;
+    font-family: SemiBold;
+    letter-spacing: 0.04rem;
+    padding: 0.9rem;
+}
+
+.header > div > span {
+    max-width: 40%;
+}
+
+.header > div > button {
+    background-color: transparent;
+    color: white;
+    font-family: SemiBold;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    border: 1px solid white;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    background-color: rgb(212, 233, 226);
+    background-image: url(../assets/static-images/rewards-hero-sm.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textContainer {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 2rem 1.6rem;
+    text-align: center;
+}
+
+.textContainer > h1 {
+    font-size: 1.4rem;
+    font-family: SemiBold;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    color: #000000DE;
+}
+
+.textContainer > p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #000000DE;
+    font-family: Regular;
+}
+
+.textContainer > button {
+    font-size: 1rem;
+    background-color: #1E3932;
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+}
+
+@media screen and (min-width: 768px) {
+    .header > div {
+        padding: 1rem 7rem;
+    }
+
+    .header > div > span {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    .header > div > button {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .header > div {
+        padding: 1rem 7rem;
+    }
+
+    .header > div > span {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .header > div > button {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        background-color: rgb(212, 233, 226);
+        background-image: url(../assets/static-images/rewards-hero-lg.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

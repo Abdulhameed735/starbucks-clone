@@ -14,7 +14,22 @@ const Rewards = () => {
             <link color="#008046" href="https://starbucks.com/next_static/icons/safari-pinned-tab.svg" rel="mask-icon"></link>
         </Head>
         
-        <NavBar />
+        <header className={styles.header}>
+          <NavBar />
+          <div>
+            <span>STARBUCKS® REWARDS</span>
+            <button>Join in the app</button>
+          </div>
+        </header>
+
+        <div className={styles.hero}>
+          <div className={styles.textContainer}>
+            <h1>Free Coffee is a tap away</h1>
+            <p>Join now to start earning rewards</p>
+            <button>Join now</button>
+            <span>Or join in the app for the best experience</span>
+          </div>
+        </div>
 
     </div>
   )

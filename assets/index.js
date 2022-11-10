@@ -7,6 +7,7 @@ import left from './svgs/left.svg';
 import down from './svgs/down.svg';
 import map from './svgs/map.svg';
 import checkbox from './svgs/checkbox.svg';
+import loading from './svgs/loading.svg';
 import facebook from './svgs/facebook.svg';
 import instagram from './svgs/instagram.svg';
 import pinterest from './svgs/pinterest.svg';
@@ -21,6 +22,11 @@ import image3 from './images/image-3.jpg';
 import image4 from './images/image-4.jpg';
 import image5 from './images/image-5.jpg';
 
+// ** */ STATIC IMAGES
+import heroSmall from './static-images/rewards-hero-sm.webp';
+import heroLarge from './static-images/rewards-hero-lg.webp';
+import placeholder from './static-images/placeholder.webp'
+
 //** */ Export SVG images and icons
 export {
     logo, 
@@ -31,6 +37,7 @@ export {
     down, 
     map, 
     checkbox,
+    loading,
     facebook, 
     instagram, 
     pinterest, 
@@ -42,4 +49,10 @@ export {
 //** */ Export Homepage images
 export {
     image1, image2, image3, image4, image5
+}
+
+
+//** */ Export Static Images
+export {
+    heroSmall, heroLarge, placeholder
 }

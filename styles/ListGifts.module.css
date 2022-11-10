@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Thin;
+    src: url(../assets/fonts/Thin.ttf);
+}
+
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../assets/fonts/SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Bold.ttf);
+}
+
+.container {
+  margin-bottom: 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head > h1 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Light;
+    letter-spacing: 0.1rem;
+}
+
+.head > span {
+    font-family: SemiBold;
+    color: #00754a;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 7rem;
+    padding-right: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    padding-right: 3rem;
+  }
+
+}
+
+
