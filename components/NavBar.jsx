@@ -77,16 +77,14 @@ const NavBar = () => {
                 <nav className={styles.menuNav}>
                     <ul>
                         <li onClick={() => setMenuToggle(!menuToggle)}  className={styles.menuNav__header}>
-                            <Link href="/menu">
-                                <Image src={left} alt='left-arrow-icon' />
-                                <span>Menu</span>
-                            </Link>
+                            <Image src={left} alt='left-arrow-icon' />
+                            <span>Menu</span>
                         </li>
                         
-                        <li className={styles.pd}>All Products</li>
-                        <li className={styles.pd}>Featured</li>
-                        <li className={styles.pd}>Previous Orders</li>
-                        <li className={styles.pd}>Favorite Products</li>
+                        <li className={styles.pd}><Link href="/menu">All Products</Link></li>
+                        <li className={styles.pd}><Link href="menu/featured">Featured</Link></li>
+                        <li className={styles.pd}><Link href="menu/previous">Previous Orders</Link></li>
+                        <li className={styles.pd}><Link href="menu/favorites">Favorite Products</Link></li>
                     </ul>
                 </nav>
             )}

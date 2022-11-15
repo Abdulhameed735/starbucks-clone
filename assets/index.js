@@ -25,7 +25,18 @@ import image5 from './images/image-5.jpg';
 // ** */ STATIC IMAGES
 import heroSmall from './static-images/rewards-hero-sm.webp';
 import heroLarge from './static-images/rewards-hero-lg.webp';
-import placeholder from './static-images/placeholder.webp'
+import placeholder from './static-images/placeholder.webp';
+import one from './static-images/getting-started-1.webp';
+import two from './static-images/getting-started-2.webp';
+import three from './static-images/getting-started-3.webp';
+import fun from './static-images/fun-freebies.webp';
+import order from './static-images/order-and-pay.webp';
+import free from './static-images/get-to-free.webp';
+import A1 from './static-images/1A.png';
+import B1 from './static-images/1B.webp';
+import A2 from './static-images/2A.png';
+import B2 from './static-images/2B.webp';
+
 
 //** */ Export SVG images and icons
 export {
@@ -54,5 +65,5 @@ export {
 
 //** */ Export Static Images
 export {
-    heroSmall, heroLarge, placeholder
+    heroSmall, heroLarge, placeholder, one, two, three, fun, order, free, A1, A2, B1, B2
 }

@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__sec__one {
+    width: 100%;
+    color: black;
+}

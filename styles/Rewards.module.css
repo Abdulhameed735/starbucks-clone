@@ -52,22 +52,26 @@
 }
 
 .hero {
-    display: flex;
     background-color: rgb(212, 233, 226);
     background-image: url(../assets/static-images/rewards-hero-sm.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right;
+    background-size: auto 100%;
+    min-height: 500px;
 }
 
 .textContainer {
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 2.5rem 2rem 0;
 }
 
 .textContainer > h1 {
-    font-size: 1.4rem;
+    margin: 0;
+    font-size: 2rem;
     font-family: SemiBold;
     text-transform: uppercase;
     letter-spacing: 0.04rem;
@@ -75,19 +79,188 @@
 }
 
 .textContainer > p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0;
+    margin-top: 1rem;
     color: #000000DE;
     font-family: Regular;
 }
 
 .textContainer > button {
     font-size: 1rem;
-    background-color: #1E3932;
+    background-color: #00754A;
     color: white;
-    padding: 0.6rem 1.5rem;
+    padding: 0.4rem 1rem;
     border: none;
     border-radius: 999px;
+    margin-top: 2rem;
+}
+
+.textContainer > span {
+    color: #000000DE;
+    margin-top: 1.5rem;
+}
+
+.textContainer > span > a {
+    text-decoration: underline;
+}
+
+.firstSec, .thirdSec {
+    padding: 2rem 1.2rem;
+}
+
+.firstSec__header, .thirdSec__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.firstSec__header > h1, .thirdSec__header > h1 {
+    font-family: Regular;
+    color: #000000DE;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.firstSec__header > h3, .thirdSec__header > h3 {
+    font-family: Light;
+    color: #000000DE;
+    font-size: 1.2rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+}
+
+.step > img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.step > h1 {
+    margin: 0;
+    margin-top: 1rem;
+    color: #000000DE;
+    font-family: Regular;
+    font-size: 1.5rem;
+}
+
+.step > h3 {
+    margin: 0;
+    margin-top: 1rem;
+    color: #000000DE;
+    font-family: Light;
+    font-size: 1.2rem;
+}
+
+.third__step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.third__step > img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.third__flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.third__flex > h1 {
+    margin: 0;
+    margin-top: 1rem;
+    color: #000000DE;
+    font-family: Regular;
+    font-size: 1.5rem;
+}
+
+.third__flex > h3 {
+    margin: 0;
+    margin-top: 1rem;
+    color: #000000DE;
+    font-family: Light;
+    font-size: 1.2rem;
+}
+
+.third__flex > a {
+    margin: 0;
+    margin-top: 1rem;
+    color: #000000DE;
+    font-family: Regular;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #006241;
+}
+
+.third__flex > a:hover {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.fourthSec {
+    width: 100%;
+    background-color: #f2f0eb;
+}
+
+.fourthSec__Wrapper {
+    padding: 5rem 1.3rem;
+}
+
+.fourthSec__Wrapper > header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fourthSec__Wrapper > header > h1 {
+    font-family: Regular;
+    color: #000000DE;
+    margin: 0;
+}
+
+.fourthSec__Wrapper > header > h3 {
+    font-family: Light;
+    color: #000000DE;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.first__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.imageText {
+    display: flex;
+    flex-direction: column;
+}
+
+.first__ImageText {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.first__ImageText > img {
+    width: 10rem;
+    height: 10rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -104,6 +277,77 @@
         display: none;
     }
     
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        max-width: 48%;
+        margin: initial;
+        padding: 4.5rem 3rem;
+    }
+
+    .textContainer > h1 {
+        font-size: 2.5rem;
+    }
+
+    .textContainer > p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .textContainer > button {
+        max-width: 120px;
+        margin-top: 2rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .textContainer > span {
+        margin-top: 1rem;
+        font-size: 1.15rem;
+    }
+
+    .hero {
+        background-color: rgb(212, 233, 226);
+        background-image: url(../assets/static-images/rewards-hero-lg.webp);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        min-height: 432px;
+    }
+
+    .firstSec__header > h1, .thirdSec__header > h1 {
+        font-size: 1.9rem;
+    }
+
+    .firstSec__header > h3, .thirdSec__header > h3 {
+        font-size: 1.5rem;
+    }
+
+    .third__step {
+        flex-direction: column;
+    }
+
+    .third__step > img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .third__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .third__flex > h1 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+ 
 }
 
 @media screen and (min-width: 1024px) {
@@ -121,10 +365,96 @@
     }
 
     .hero {
-        display: flex;
         background-color: rgb(212, 233, 226);
         background-image: url(../assets/static-images/rewards-hero-lg.webp);
+        background-position: 50%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto 100%;
+        min-height: 600px;
+    }
+
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+        max-width: 30%;
+        margin: initial;
+        padding: 5rem 3rem;
+    }
+
+    .textContainer > h1 {
+        font-size: 2.7rem;
+    }
+
+    .textContainer > p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .textContainer > button {
+        padding: 0.7rem 1.4rem;
+        max-width: 130px;
+        margin-top: 2.3rem;
+    }
+
+    .textContainer > span {
+        margin-top: 1.3rem;
+        font-size: 1.25rem;
+    }
+
+    .firstSec, .thirdSec {
+        padding: 4rem 8rem;
+    }
+
+    .firstSec__header > h1, .thirdSec__header > h1 {
+        font-size: 2.2rem;
+    }
+
+    .firstSec__header > h3, .thirdSec__header > h3 {
+        font-size: 1.6rem;
+    }
+
+    .steps {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    .step {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third__step {
+        flex-direction: column;
+    }
+
+    .third__step > img {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .third__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .third__flex > h1 {
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .fourthSec {
+        width: 100%;
+        background-color: #f2f0eb;
     }
 }

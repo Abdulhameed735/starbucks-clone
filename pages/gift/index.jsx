@@ -17,7 +17,7 @@ const Gift = () => {
 
       <NavBar />
 
-      <ListGift title={'Featured'} />
+      <ListGift title={'Featured'} col='featured' />
 
       <div className={styles.info}>
         <div className={styles.info__first}>

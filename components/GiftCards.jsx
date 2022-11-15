@@ -25,14 +25,19 @@ const GiftCards = ({dbCollection}) => {
     <div className={styles.gifts__container}>
       {data.map(datum => (
         <div 
-          onClick={() => router.push(`/gift/${datum.id}`)} 
+          onClick={() => {
+            router.push({
+              pathname: '/gift/[id]',
+              query: {id: datum.id, imgSrc: datum.imgUrl},
+            }, `/gift/${datum.id}`)
+          }} 
           className={styles.gifts__cards} key={datum.id}
         >
           <Image 
             placeholder='blur' 
             blurDataURL='../assets/static-images/placeholder.webp' 
             quality={100} src={datum.imgUrl} 
-            alt="gifts" 
+            alt="gift-card" 
             width={260} height={170} 
           />
         </div>
